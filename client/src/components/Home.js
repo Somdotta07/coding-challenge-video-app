@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
-import Comments from './Comments';
 
 export default class Home extends Component {
 
@@ -33,13 +32,13 @@ export default class Home extends Component {
               <div className="col-md-4" key={video.id}>
                 <Link to={`/player/${video.id}`}>
                   <div className="card border-0">
-                    <video src={`http://localhost:8000/video/${video.id}`} alt={video.name} />
+                    <video src={`http://localhost:8000/video/${video.id}`} alt={video.name} className="video-c" />
                     <div className="card-body">
                       <p>{video.name}</p>
                     </div>
                   </div>
                 </Link>
-                <div className="home-comment"><Comments /></div>
+                
                  
               </div>
               )}

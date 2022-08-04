@@ -1,5 +1,55 @@
 .App-header {
   min-height: 100vh;
-  color: rgb(36, 36, 36);
+  color: rgb(16, 14, 14);
 }
 
+header, footer {
+  background-color: #548df6;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+}
+
+header {
+  margin-bottom: 50px;
+  font-size: 28px;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+.card {
+  margin: 10px 0;
+}
+
+a, a:hover {
+  color: #282c34;
+  text-decoration: none;
+}
+
+video {
+  width: 100%;
+  height: 50vh;
+}
+
+.video-c {
+  height: 200px;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid rgb(197, 196, 196);
+}
+
+p {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.card-comment {
+  width: 50%;
+}
+
+.sign {
+  margin-right: 75%;
+}

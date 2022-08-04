@@ -11,7 +11,7 @@ export default class Comments extends Component {
         key: "",
       },
     };
-    this.handleInput = this.handleInput.bind(this);
+       this.handleInput = this.handleInput.bind(this);
     this.addComment = this.addComment.bind(this);
   }
 
@@ -38,22 +38,32 @@ export default class Comments extends Component {
       });
     }
   }
+
   render() {
     return (
       <div>
-        <form id="comments" onSubmit={this.addComment}>
-          <input
-            type="text"
-            placeholder=" Enter your comment"
-            value={this.state.currentComment.text}
-            onChange={this.handleInput}
-          />
-          <button type="submit" className="btn btn-primary btn-sm shadow-none">
-            Post
-          </button>
-        </form>
+        <div className="comment-c">
+          <form id="comments" onSubmit={this.addComment}>
+            <textarea
+              className="form-control ml-5 shadow-none textarea"
+              type="text"
+              placeholder=" Enter your comment"
+              value={this.state.currentComment.text}
+              onChange={this.handleInput}
+            />
 
-        <CommentList comments={this.state.comments} />
+            <div className="mt-2 text-right">
+              <button
+                className="btn btn-primary btn-sm shadow-none"
+                type="submit"
+              >
+                Post comment
+              </button>
+            </div>
+          </form>
+
+          <CommentList comments={this.state.comments} />
+        </div>
       </div>
     );
   }
