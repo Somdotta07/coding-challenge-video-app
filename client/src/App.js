@@ -6,16 +6,26 @@ import {
 } from "react-router-dom";
 import Home from './components/Home';
 import Player from './components/Player';
+import { Signup } from './components/Signup';
+import {Login } from './components/Login'
 import './App.css';
+import { AuthProvider } from './contexts/AuthContext';
+import PrivateRoute from './components/PrivateRoute';
 
 function App() {
   return (
+    
     <Router>
+      <AuthProvider>
       <Switch>
-        <Route exact path="/" component={Home}></Route>
+          <Route path="/signup" component={Signup}></Route>
+          <Route  path="/login" component={Login}></Route>
+        <PrivateRoute  exact path="/" component={Home} />
         <Route path="/player/:id" component={Player}></Route>
-      </Switch>
-    </Router>
+        </Switch>
+        </AuthProvider>
+      </Router>
+      
   );
 }
 
