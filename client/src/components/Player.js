@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Toggle from "./Toggle";
+import { Link } from "react-router-dom";
 
 export default class Player extends Component {
   constructor(props) {
@@ -28,9 +29,9 @@ export default class Player extends Component {
     return (
       <div className="App-header">
         <Header />
-        <div className="container mt-5">
-          <div className="d-flex justify-content-center row">
-            <div className="col-md-8">
+        <div className="container ">
+          <div className="d-flex  row">
+            <div className="col-md-10 left">
               <div className="d-flex flex-column comment-section">
                 <div className="bg-white p-2">
                   <div className="d-flex flex-row user-info">
@@ -67,9 +68,71 @@ export default class Player extends Component {
                 </div>
                 <div className="bg-light p-2">
                   <div className="d-flex flex-row align-items-start">
-                   <Toggle />
-                    
+                    <Toggle />
                   </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2 right">
+              <div
+                className="single__suggestion d__flex"
+                style={{
+                  padding: "10px 20px",
+                }}
+              >
+                <div className="thumb__img relative d__flex">
+                  <iframe
+                    src={`http://localhost:8000/video/3`}
+                    alt=""
+                    className="thumb__img pointer"
+                    frameborder="0" sandbox=""
+                  />
+                </div>
+              </div>
+
+              <div
+                className="single__suggestion d__flex"
+                style={{
+                  padding: "10px 20px",
+                }}
+              >
+                <div className="thumb__img relative d__flex">
+                  <iframe
+                    src={`http://localhost:8000/video/1`}
+                    alt=""
+                    className="thumb__img pointer"
+                    frameborder="0" sandbox=""
+                  />
+                </div>
+              </div>
+              <div
+                className="single__suggestion d__flex"
+                style={{
+                  padding: "10px 20px",
+                }}
+              >
+                <div className="thumb__img relative d__flex">
+                  <iframe
+                    src={`http://localhost:8000/video/4`}
+                    alt=""
+                    className="thumb__img pointer"
+                    frameborder="0" sandbox=""
+                  />
+                </div>
+              </div>
+              <div
+                className="single__suggestion d__flex"
+                style={{
+                  padding: "10px 20px",
+                }}
+              >
+                <div className="thumb__img relative d__flex">
+                  <iframe
+                    src={`http://localhost:8000/video/5`}
+                    alt=""
+                    className="thumb__img pointer"
+                    frameborder="0" sandbox=""
+                  />
                 </div>
               </div>
             </div>

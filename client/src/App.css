@@ -4,7 +4,7 @@
 }
 
 header, footer {
-  background-color: #548df6;
+  background-color: #f65487;
   text-align: center;
   color: white;
   padding: 10px 0;
@@ -24,10 +24,14 @@ footer {
   margin: 10px 0;
 }
 
-a, a:hover {
-  color: #282c34;
+a {
+  color: #6591e9;
   text-decoration: none;
 }
+
+ a:hover {
+  color: black;
+ }
 
 video {
   width: 100%;
@@ -53,3 +57,4 @@ p {
 .sign {
   margin-right: 75%;
 }
+
