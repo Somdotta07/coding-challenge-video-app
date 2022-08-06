@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Toggle from "./Toggle";
-import { Link } from "react-router-dom";
 
 export default class Player extends Component {
   constructor(props) {
@@ -56,10 +55,7 @@ export default class Player extends Component {
                       <i className="fa fa-thumbs-o-up"></i>
                       <span className="ml-1">Like</span>
                     </div>
-                    <div className="like p-2 cursor">
-                      <i className="fa fa-commenting-o"></i>
-                      <span className="ml-1">Comment</span>
-                    </div>
+
                     <div className="like p-2 cursor">
                       <i className="fa fa-share"></i>
                       <span className="ml-1">Share</span>
@@ -68,7 +64,10 @@ export default class Player extends Component {
                 </div>
                 <div className="bg-light p-2">
                   <div className="d-flex flex-row align-items-start">
-                    <Toggle />
+                    <div className="like p-2 cursor">
+                      <Toggle />
+                      <span className="ml-1"></span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -82,10 +81,12 @@ export default class Player extends Component {
               >
                 <div className="thumb__img relative d__flex">
                   <iframe
+                    title="sample video"
                     src={`http://localhost:8000/video/3`}
                     alt=""
                     className="thumb__img pointer"
-                    frameborder="0" sandbox=""
+                    frameBorder="0"
+                    sandbox=""
                   />
                 </div>
               </div>
@@ -98,10 +99,12 @@ export default class Player extends Component {
               >
                 <div className="thumb__img relative d__flex">
                   <iframe
+                    title="sample video"
                     src={`http://localhost:8000/video/1`}
                     alt=""
                     className="thumb__img pointer"
-                    frameborder="0" sandbox=""
+                    frameborder="0"
+                    sandbox=""
                   />
                 </div>
               </div>
@@ -113,10 +116,12 @@ export default class Player extends Component {
               >
                 <div className="thumb__img relative d__flex">
                   <iframe
+                    title="sample video"
                     src={`http://localhost:8000/video/4`}
                     alt=""
                     className="thumb__img pointer"
-                    frameborder="0" sandbox=""
+                    frameborder="0"
+                    sandbox=""
                   />
                 </div>
               </div>
@@ -128,10 +133,12 @@ export default class Player extends Component {
               >
                 <div className="thumb__img relative d__flex">
                   <iframe
+                    title="sample video"
                     src={`http://localhost:8000/video/5`}
                     alt=""
                     className="thumb__img pointer"
-                    frameborder="0" sandbox=""
+                    frameborder="0"
+                    sandbox=""
                   />
                 </div>
               </div>
