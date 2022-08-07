@@ -1,6 +1,18 @@
-## coding-challenge-video-app
+# coding-challenge-video-app
+ ### For back-end server 
+    From your terminal enter in sequence
+  - `git clone https://github.com/Somdotta07/coding-challenge-video-app.git`
+  - `cd server`
+  - ` npm install`
+  - ` npm run dev `
+  - server will run in `http://localhost:8000/videos`
+ ### For front-end
+  - After running the server `cd client`
+  - ` npm install`
+  - ` npm start `
 
-# Blindside Coding Challenge
+
+## Blindside Coding Challenge
 If you applied for a front-end position, please implement the Coding Challenge in React.
 …for Mobile, please implement the Coding Challenge in Flutter.
 …for Backend/Infrastructure, please see ‘Alternative Challenge’
